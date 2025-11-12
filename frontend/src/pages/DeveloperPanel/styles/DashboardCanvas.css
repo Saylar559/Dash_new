@@ -1,0 +1,176 @@
+:root {
+  --domrf-green: #8BC540;
+  --domrf-gray-dark: #2F444E;
+  --domrf-gray-light: #76787A;
+  --domrf-border: #E6EDF6;
+  --domrf-bg-light: #F6F9FF;
+  --domrf-white: #FFFFFF;
+}
+
+/* Root всегда шире экрана, BI preview живёт в canvas-wrapper */
+body, #root {
+  width: 100vw !important;
+  min-width: 0 !important;
+  overflow-x: auto !important;
+}
+
+/* CANVAS BI GRID – всегда занимает max ширину */
+.canvas-wrapper {
+  width: 100vw !important;
+  max-width: 1540px !important;
+  min-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 16px;
+  background: #f5f8ff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+.canvas-wrapper--clean {
+  background: #fff;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  min-height: unset;
+}
+
+/* GRID всегда wide, grid-col: 24 (или сколько layout) */
+.canvas-layout {
+  width: 100% !important;
+  min-width: 1050px !important;
+  max-width: 1540px !important;
+  margin: 0 auto !important;
+  background: transparent;
+}
+
+.canvas-layout--published { background: #fff; }
+
+/* WIDGET в grid */
+.canvas-widget {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #E6EDF6;
+  position: relative;
+  transition: box-shadow .18s, border .21s;
+  min-width: 0;
+  max-width: 100%;
+}
+.canvas-widget--selected {
+  border: 2px solid var(--domrf-green);
+  box-shadow: 0 0 0 4px rgba(139,197,64,0.14), 0 4px 24px rgba(47,68,78,0.06);
+  z-index: 1;
+}
+.canvas-widget--clean {
+  background: #fff;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+.canvas-widget--empty {
+  opacity: 0.7;
+  background: #fafbfc;
+  border-style: dashed;
+  border-color: #d0d5dd;
+}
+.canvas-widget__content {
+  flex: 1;
+  padding: 16px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.canvas-widget__content > * { flex: 1; }
+
+/* Drag/action bar UI */
+.canvas-drag-handle {
+  background: linear-gradient(135deg, #8BC540 0%, #2B76F0 100%);
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: grab;
+  user-select: none;
+  border-bottom: 1px solid rgba(255,255,255,.12);
+}
+.canvas-drag-handle:active { cursor: grabbing; }
+.canvas-action-bar {
+  position: absolute;
+  top: 9px; right: 8px;
+  display: flex; gap: 6px;
+  z-index: 11;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.canvas-widget:hover .canvas-action-bar,
+.canvas-widget--selected .canvas-action-bar { opacity: 1; }
+.canvas-action-btn {
+  width: 32px; height: 32px; border: none; border-radius: 8px;
+  background: #fff; color: #2d2d2d; font-size: 15px;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+  transition: all .15s;
+}
+.canvas-action-btn:hover { background: var(--domrf-green); color: #fff; transform: scale(1.08);}
+.canvas-action-btn--remove:hover { background: #e74c3c; }
+.canvas-action-btn--duplicate:hover { background: #27ae60; }
+.canvas-action-btn--edit:hover { background: #f39c12;}
+
+/* Empty State */
+.canvas-widget__empty {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; height: 100%;
+  color: #76787a; font-size: 14px; text-align: center; padding: 20px;
+}
+.canvas-widget__empty div { font-size: 36px; margin-bottom: 8px; opacity: 0.6;}
+.canvas-widget__empty p { margin: 0; font-style: italic;}
+
+.widget-info-preview {
+  width: 100%; min-height: 100%;
+  display: flex; align-items: flex-start;
+  justify-content: flex-start; line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+/* ===== САМЫЙ КРИТИЧЕСКИЙ ФИКС ===== */
+.widget-info-preview * {
+  text-align: inherit !important;
+}
+/* ===== END FIX ===== */
+
+.canvas-empty {
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; height: 500px;
+  color: #76787a; font-size: 16px; text-align: center;
+  background: #f8f9fa; border: 2px dashed #d0d5dd; border-radius: 12px;
+}
+.canvas-empty div { font-size: 64px; margin-bottom: 16px; opacity: 0.6;}
+.canvas-empty p { margin: 0; font-weight: 500; }
+
+/* Адаптивность */
+@media (max-width: 1700px) {
+  .canvas-wrapper, .canvas-layout { max-width: 100vw !important; min-width: 0 !important; }
+}
+@media (max-width: 1024px) {
+  .canvas-wrapper { padding: 10px; }
+  .canvas-widget__content { padding: 8px; }
+}
+@media (max-width: 800px) {
+  .canvas-wrapper { padding: 6px; min-width: 0; }
+  .canvas-layout { min-width: 0; }
+  .canvas-empty { height: 340px; font-size: 12px;}
+  .canvas-widget__empty { font-size: 11px; padding: 8px;}
+}
+
+::selection { background: var(--domrf-green); color: #fff;}
+.canvas-drag-handle:focus-visible,
+.canvas-action-btn:focus-visible { outline: 2px solid var(--domrf-green); outline-offset: 2px; }
+
+

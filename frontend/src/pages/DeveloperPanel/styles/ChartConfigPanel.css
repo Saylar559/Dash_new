@@ -1,0 +1,295 @@
+/* ========================================
+   ChartConfigPanel — Корпоративный стиль ДОМ.РФ
+   Уровень: Senior Frontend
+   ======================================== */
+
+.chart-config-panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: 'Inter', 'Roboto', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.chart-config-panel.chart-dark {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.chart-config-panel.chart-dark .chart-config-divider {
+  border-color: #333;
+}
+
+.chart-config-panel.chart-dark .chart-config-label,
+.chart-config-panel.chart-dark label {
+  color: #b0b0b0;
+}
+
+.chart-config-panel.chart-dark input::placeholder,
+.chart-config-panel.chart-dark select {
+  color: #888;
+}
+
+/* ===== Грид-лейаут ===== */
+.chart-config-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+/* ===== Поля ввода ===== */
+.chart-config-field,
+.chart-config-row-tight {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chart-config-row-tight {
+  gap: 16px;
+}
+
+.chart-config-label {
+  font-weight: 500;
+  color: #2d2d2d;
+  min-width: 140px;
+  font-size: 13.5px;
+}
+
+.chart-config-panel.chart-dark .chart-config-label {
+  color: #cccccc;
+}
+
+/* ===== Селекты ===== */
+.chart-config-select {
+  padding: 8px 12px;
+  border: 1.5px solid #d0d5dd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  color: #1a1a1a;
+  min-width: 160px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23666' width='18px' height='18px'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 32px;
+}
+
+.chart-config-select:focus {
+  outline: none;
+  border-color: #0052cc;
+  box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.15);
+}
+
+.chart-config-panel.chart-dark .chart-config-select {
+  background-color: #2d2d2d;
+  border-color: #444;
+  color: #e0e0e0;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23aaa' width='18px' height='18px'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+}
+
+.chart-config-panel.chart-dark .chart-config-select:focus {
+  border-color: #4a8eff;
+  box-shadow: 0 0 0 3px rgba(74, 142, 255, 0.25);
+}
+
+/* ===== Инпуты ===== */
+.chart-config-input {
+  padding: 8px 12px;
+  border: 1.5px solid #d0d5dd;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  color: #1a1a1a;
+  transition: all 0.2s ease;
+}
+
+.chart-config-input:focus {
+  outline: none;
+  border-color: #0052cc;
+  box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.15);
+}
+
+.chart-config-input::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+.chart-config-panel.chart-dark .chart-config-input {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+.chart-config-panel.chart-dark .chart-config-input:focus {
+  border-color: #4a8eff;
+  box-shadow: 0 0 0 3px rgba(74, 142, 255, 0.25);
+}
+
+/* ===== Чекбоксы ===== */
+.chart-config-row-tight label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13.5px;
+  color: #2d2d2d;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chart-config-panel.chart-dark .chart-config-row-tight label {
+  color: #cccccc;
+}
+
+.chart-config-row-tight input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #0052cc;
+  cursor: pointer;
+}
+
+.chart-config-panel.chart-dark input[type="checkbox"] {
+  accent-color: #4a8eff;
+}
+
+/* ===== Цветовые пикери ===== */
+.chart-config-colors {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chart-config-colors input[type="color"] {
+  width: 36px;
+  height: 36px;
+  padding: 2px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background: transparent;
+}
+
+.chart-config-colors input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.chart-config-colors input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 6px;
+}
+
+.chart-config-colors input[type="color"]:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 2px rgba(0, 82, 204, 0.2);
+}
+
+.chart-config-panel.chart-dark .chart-config-colors input[type="color"] {
+  border-color: #444;
+}
+
+.chart-config-panel.chart-dark .chart-config-colors input[type="color"]:hover {
+  box-shadow: 0 0 0 2px rgba(74, 142, 255, 0.3);
+}
+
+/* ===== Кнопки +/- ===== */
+.chart-config-color-btn {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid #d0d5dd;
+  border-radius: 8px;
+  background: #f9f9f9;
+  color: #444;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart-config-color-btn:hover {
+  background: #0052cc;
+  color: white;
+  border-color: #0052cc;
+  transform: translateY(-1px);
+}
+
+.chart-config-panel.chart-dark .chart-config-color-btn {
+  background: #2d2d2d;
+  border-color: #444;
+  color: #aaa;
+}
+
+.chart-config-panel.chart-dark .chart-config-color-btn:hover {
+  background: #4a8eff;
+  border-color: #4a8eff;
+  color: white;
+}
+
+/* ===== Разделитель ===== */
+.chart-config-divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 16px 0;
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 768px) {
+  .chart-config-grid {
+    gap: 14px;
+  }
+
+  .chart-config-field,
+  .chart-config-row-tight {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chart-config-label {
+    min-width: auto;
+    margin-bottom: 4px;
+  }
+
+  .chart-config-select,
+  .chart-config-input {
+    width: 100%;
+  }
+
+  .chart-config-colors {
+    justify-content: flex-start;
+  }
+
+  .chart-config-color-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ===== Фокус для доступности ===== */
+.chart-config-select:focus-visible,
+.chart-config-input:focus-visible,
+.chart-config-color-btn:focus-visible {
+  outline: 2px solid #0052cc;
+  outline-offset: 2px;
+}
+
+.chart-config-panel.chart-dark .chart-config-select:focus-visible,
+.chart-config-panel.chart-dark .chart-config-input:focus-visible,
+.chart-config-panel.chart-dark .chart-config-color-btn:focus-visible {
+  outline-color: #4a8eff;
+}
