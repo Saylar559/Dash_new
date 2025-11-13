@@ -5,7 +5,7 @@ from app.database import get_db
 
 router = APIRouter(prefix="/api/query", tags=["Query"])
 
-MAX_ROWS = 500
+MAX_ROWS = 500000
 
 def is_sql_safe(query: str) -> bool:
     """Разрешает ТОЛЬКО безопасные SELECT-запросы (без опасных операций)"""

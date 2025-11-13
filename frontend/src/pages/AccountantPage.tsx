@@ -1,9 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import CardBlock from './CardBlock';
-import "./style_page/AccountantPage.css";
-
-// Импортируй Footer один раз (путь скорректируй под проект)
 import Footer from './Footer';
 
 const cards = [
@@ -29,8 +26,9 @@ const cards = [
     title: "Загрузка Excel",
     icon: "📁",
     desc: "Импортируйте новые файлы — быстро и просто",
-    route: "/accountant/import"
-  }
+    external: true,
+    url: "http://10.10.3.58:5000/",
+  },
 ];
 
 export default function AccountantPage() {
@@ -38,30 +36,39 @@ export default function AccountantPage() {
   const logout = () => navigate('/login');
 
   return (
-    <div className="accountant-app">
-      <header className="accountant-header">
-        <h1 className="accountant-title">Панель бухгалтера</h1>
-        <button className="accountant-logout-btn" onClick={logout}>Выйти</button>
+    <div className="min-h-screen flex flex-col bg-gradient-to-tr from-blue-50 via-white to-blue-100">
+      {/* Header */}
+      <header className="flex justify-between items-center p-6 bg-white shadow sticky top-0 z-10">
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 tracking-tight">Панель бухгалтера</h1>
+        <button onClick={logout}
+          className="text-blue-700 border-2 border-blue-500 px-4 py-2 rounded-full hover:bg-blue-100 hover:shadow transition font-semibold">
+          Выйти
+        </button>
       </header>
-      <main className="accountant-cards-row">
-        {cards.map((card) =>
-          <CardBlock
-            key={card.title}
-            title={card.title}
-            icon={card.icon}
-            onClick={() => {
-              if (card.title === "Загрузка Excel") {
-                window.open("http://10.10.3.58:5000/", "_blank");
-              } else {
-                navigate(card.route);
-              }
-            }}
-            className="accountant-card"
-          >
-            {card.desc}
-          </CardBlock>
-        )}
+
+      {/* Cards */}
+      <main className="flex-1 py-8">
+        <div className="grid gap-8 px-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+          {cards.map((card) =>
+            <div
+              key={card.title}
+              className="bg-white rounded-xl shadow-lg hover:shadow-xl transition border hover:border-blue-400 cursor-pointer flex flex-col justify-between p-6 group"
+              onClick={() => card.external ? window.open(card.url, "_blank") : navigate(card.route)}
+              tabIndex={0}
+              role="button"
+              aria-label={`Перейти: ${card.title}`}
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <span className="text-3xl">{card.icon}</span>
+                <span className="text-lg font-semibold text-gray-900">{card.title}</span>
+              </div>
+              <div className="text-gray-500 group-hover:text-blue-800 transition">{card.desc}</div>
+            </div>
+          )}
+        </div>
       </main>
+
+      {/* Footer */}
       <Footer />
     </div>
   );

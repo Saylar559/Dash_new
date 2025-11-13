@@ -1,0 +1,120 @@
+/* Основной контейнер отчёта */
+.report-escrow-balances-container {
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Хэдер отчёта */
+.report-escrow-balances-header {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #eaf3fc;
+  padding-bottom: 8px;
+}
+
+.report-title {
+  font-weight: 700;
+  color: #2269c6;
+  letter-spacing: 0.01em;
+}
+
+.switch-theme-btn {
+  min-width: 120px;
+  border: none;
+}
+
+/* Фильтры */
+.report-tools-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+/* Поисковое поле */
+.report-filter-input {
+  border: 1.3px solid #dae5f6;
+  font-size: 1em;
+}
+
+/* Таблица */
+.report-table {
+  width: 96%;
+  background: #fff;
+  margin: 24px auto 0;
+  border-collapse: collapse;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(210,230,255,0.06);
+  font-size: 1em;
+}
+
+.report-table thead {
+  background: #f3f7fa;
+}
+
+.report-table th, .report-table td {
+  padding: 8px 16px;
+  text-align: left;
+  border-bottom: 1.2px solid #eaf1fb;
+}
+
+.report-table th {
+  font-weight: 700;
+  font-size: 1.01em;
+}
+
+.report-table tr:last-child td {
+  border-bottom: none;
+}
+
+.report-table tr:hover {
+  background: #f5fbff;
+}
+
+/* Графики (контейнеры) */
+.escrow-chart-card,
+.escrow-chart-dynamic-card {
+  background: #fff;
+  border-radius: 12px;
+  margin: 24px auto;
+  padding: 22px 20px;
+  max-width: 98vw;
+  box-shadow: 0 1.2px 10px #c8e0fc15;
+}
+
+.theme-dark .report-table th, 
+.theme-dark .report-table td {
+  background: #20222d;
+  color: #eef;
+  border-color: #393a49;
+}
+
+.theme-dark .report-escrow-balances-header {
+  border-bottom: 2px solid #2a3141;
+}
+
+.theme-dark .escrow-chart-card,
+.theme-dark .escrow-chart-dynamic-card {
+  background: #232428;
+  color: #e0eaff;
+  box-shadow: 0 2px 15px #0006;
+}
+
+/* Сообщения, ошибки, загрузка */
+.report-loading {
+  color: #2874cc;
+  font-weight: 600;
+  font-size: 1.11em;
+}
+
+.report-error {
+  color: #b01818;
+  background: #fff5f5;
+  border: 1.8px solid #fc8181;
+}
+
+.theme-dark .report-error {
+  background: #421d1d;
+  color: #feb2b2;
+  border: 1.5px solid #874343;
+}
