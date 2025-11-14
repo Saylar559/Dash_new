@@ -2,45 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Глобально */
 @layer base {
-  * {
-    @apply border-apple-gray-200;
-  }
   body {
-    @apply bg-apple-gray-50 text-apple-gray-900 font-sans antialiased;
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-white font-sans antialiased;
   }
 }
 
+/* Компоненты */
 @layer components {
+  .btn {
+    @apply px-5 py-2.5 rounded-lg font-medium text-sm
+           transition-all duration-200
+           active:scale-95 disabled:opacity-60;
+  }
   .btn-primary {
-    @apply bg-apple-blue text-white px-6 py-3 rounded-xl font-medium 
-           hover:bg-blue-600 transition-all duration-200 
-           active:scale-95 shadow-sm hover:shadow-md;
+    @apply bg-blue-600 text-white hover:bg-blue-700;
   }
-  
   .btn-secondary {
-    @apply bg-white text-apple-gray-900 px-6 py-3 rounded-xl font-medium
-           border border-apple-gray-200 hover:bg-apple-gray-50 
-           transition-all duration-200 active:scale-95 shadow-sm hover:shadow-md;
+    @apply bg-white dark:bg-gray-800 text-gray-900 dark:text-white
+           border border-gray-300 dark:border-gray-600
+           hover:bg-gray-50 dark:hover:bg-gray-700;
   }
-  
+
   .input {
-    @apply w-full px-4 py-3 border border-apple-gray-200 rounded-xl
-           focus:outline-none focus:ring-2 focus:ring-apple-blue focus:border-transparent
-           transition-all duration-200 bg-white;
+    @apply w-full px-4 py-2.5 bg-white dark:bg-gray-800
+           text-gray-900 dark:text-white
+           border border-gray-300 dark:border-gray-600
+           rounded-lg placeholder-gray-400 dark:placeholder-gray-500
+           focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
+           dark:focus:ring-offset-gray-900
+           transition-all duration-200;
   }
-}
 
-/* Чистый скроллбар */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-lg p-6 shadow-sm border border-gray-200 dark:border-gray-700;
+  }
 
-::-webkit-scrollbar-track {
-  @apply bg-apple-gray-100;
-}
-
-::-webkit-scrollbar-thumb {
-  @apply bg-apple-gray-300 rounded-full hover:bg-apple-gray-400;
+  .table {
+    @apply w-full text-left;
+  }
+  .table th {
+    @apply px-4 py-3 text-xs font-medium uppercase tracking-wider
+           bg-gray-50 dark:bg-gray-800
+           text-gray-500 dark:text-gray-400
+           border-b border-gray-200 dark:border-gray-700;
+  }
+  .table td {
+    @apply px-4 py-3 border-b border-gray-100 dark:border-gray-700;
+  }
+  .table tbody tr:hover {
+    @apply bg-gray-50 dark:bg-gray-800;
+  }
 }

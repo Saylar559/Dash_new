@@ -3,7 +3,434 @@
 > vite --host 0.0.0.0 --port 5173
 
 
-  VITE v5.4.21  ready in 196 ms
+  VITE v5.4.21  ready in 300 ms
 
   ➜  Local:   http://localhost:5173/
   ➜  Network: http://10.10.3.58:5173/
+16:20:47 [vite] page reload src/pages/Reports/EscrowChart.tsx
+16:21:34 [vite] page reload src/pages/Reports/EscrowChart.tsx
+16:21:52 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+16:21:52 [vite] Internal server error: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowAccountsReport.tsx: Expected corresponding JSX closing tag for <option>. (204:43)
+
+  202 |             <option value="">Все годы</option>
+  203 |             {years.map((y) => (
+> 204 |               <option key={y} value={y}>{y}</Χoption>
+      |                                            ^
+  205 |             ))}
+  206 |           </select>
+  207 |
+  Plugin: vite:react-babel
+  File: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowAccountsReport.tsx:204:43
+  202|              <option value="">Все годы</option>
+  203|              {years.map((y) => (
+  204|                <option key={y} value={y}>{y}</Χoption>
+     |                                             ^
+  205|              ))}
+  206|            </select>
+      at constructor (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.jsxParseElementAt (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:4756:16)
+      at TypeScriptParserMixin.jsxParseElement (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9828:39
+      at TypeScriptParserMixin.tryParse (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9828:18)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+      at TypeScriptParserMixin.allowInAnd (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+      at TypeScriptParserMixin.parseExprAtom (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9839:20)
+      at TypeScriptParserMixin.parseFunctionBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12167:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12149:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11759:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9839:20)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+      at TypeScriptParserMixin.allowInAnd (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+16:21:59 [vite] page reload src/pages/Reports/EscrowChart.tsx
+16:22:00 [vite] Internal server error: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowAccountsReport.tsx: Expected corresponding JSX closing tag for <option>. (204:43)
+
+  202 |             <option value="">Все годы</option>
+  203 |             {years.map((y) => (
+> 204 |               <option key={y} value={y}>{y}</Χoption>
+      |                                            ^
+  205 |             ))}
+  206 |           </select>
+  207 |
+  Plugin: vite:react-babel
+  File: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowAccountsReport.tsx:204:43
+  202|              <option value="">Все годы</option>
+  203|              {years.map((y) => (
+  204|                <option key={y} value={y}>{y}</Χoption>
+     |                                             ^
+  205|              ))}
+  206|            </select>
+      at constructor (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.jsxParseElementAt (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:4756:16)
+      at TypeScriptParserMixin.jsxParseElement (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+      at TypeScriptParserMixin.parseExprAtom (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9828:39
+      at TypeScriptParserMixin.tryParse (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9828:18)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+      at TypeScriptParserMixin.allowInAnd (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+      at TypeScriptParserMixin.parseExprAtom (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9839:20)
+      at TypeScriptParserMixin.parseFunctionBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12167:24)
+      at TypeScriptParserMixin.parseArrowExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12149:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11759:12)
+      at TypeScriptParserMixin.parseExprAtom (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+      at TypeScriptParserMixin.parseExprAtom (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+      at TypeScriptParserMixin.parseUpdate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9839:20)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+      at TypeScriptParserMixin.allowInAnd (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+16:22:00 [vite] Pre-transform error: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowAccountsReport.tsx: Expected corresponding JSX closing tag for <option>. (204:43)
+
+  202 |             <option value="">Все годы</option>
+  203 |             {years.map((y) => (
+> 204 |               <option key={y} value={y}>{y}</Χoption>
+      |                                            ^
+  205 |             ))}
+  206 |           </select>
+  207 |
+16:22:19 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+16:22:19 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+16:22:26 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+16:22:26 [vite] Internal server error: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowChart.tsx: Unexpected token, expected "," (64:51)
+
+  62 |
+  63 |   // === Данные графика ===
+> 64 |   const chartData = useMemo(() =>uges: ChartData[] => {
+     |                                                    ^
+  65 |     if (filteredData.length === 0) return [];
+  66 |
+  67 |     const monthsMap = new Map<string, Map<string, number>>();
+  Plugin: vite:react-babel
+  File: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowChart.tsx:64:51
+  62 |  
+  63 |    // === Данные графика ===
+  64 |    const chartData = useMemo(() =>uges: ChartData[] => {
+     |                                                     ^
+  65 |      if (filteredData.length === 0) return [];
+  66 |  
+      at constructor (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.unexpected (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+      at TypeScriptParserMixin.expect (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6924:12)
+      at TypeScriptParserMixin.parseCallExpressionArguments (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11307:14)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11250:29)
+      at TypeScriptParserMixin.parseSubscript (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11184:19)
+      at TypeScriptParserMixin.parseSubscript (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9329:18)
+      at TypeScriptParserMixin.parseSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11158:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11149:17)
+      at TypeScriptParserMixin.parseUpdate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9839:20)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+      at TypeScriptParserMixin.allowInAnd (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+      at TypeScriptParserMixin.parseVar (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13460:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9469:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12927:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseBlock (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13373:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12174:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12160:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9223:18)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13521:12
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12477:14)
+      at TypeScriptParserMixin.parseFunction (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13520:10)
+      at TypeScriptParserMixin.parseExportDefaultExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13983:19)
+      at TypeScriptParserMixin.parseExportDefaultExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9463:18)
+      at TypeScriptParserMixin.parseExport (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13904:25)
+      at TypeScriptParserMixin.parseExport (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9446:20)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12954:27)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:14568:25)
+16:22:35 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+16:22:36 [vite] Pre-transform error: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowChart.tsx: Unexpected token, expected "," (64:51)
+
+  62 |
+  63 |   // === Данные графика ===
+> 64 |   const chartData = useMemo(() =>uges: ChartData[] => {
+     |                                                    ^
+  65 |     if (filteredData.length === 0) return [];
+  66 |
+  67 |     const monthsMap = new Map<string, Map<string, number>>();
+16:22:36 [vite] Internal server error: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowChart.tsx: Unexpected token, expected "," (64:51)
+
+  62 |
+  63 |   // === Данные графика ===
+> 64 |   const chartData = useMemo(() =>uges: ChartData[] => {
+     |                                                    ^
+  65 |     if (filteredData.length === 0) return [];
+  66 |
+  67 |     const monthsMap = new Map<string, Map<string, number>>();
+  Plugin: vite:react-babel
+  File: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowChart.tsx:64:51
+  62 |  
+  63 |    // === Данные графика ===
+  64 |    const chartData = useMemo(() =>uges: ChartData[] => {
+     |                                                     ^
+  65 |      if (filteredData.length === 0) return [];
+  66 |  
+      at constructor (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.unexpected (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+      at TypeScriptParserMixin.expect (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6924:12)
+      at TypeScriptParserMixin.parseCallExpressionArguments (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11307:14)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11250:29)
+      at TypeScriptParserMixin.parseSubscript (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11184:19)
+      at TypeScriptParserMixin.parseSubscript (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9329:18)
+      at TypeScriptParserMixin.parseSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11158:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11149:17)
+      at TypeScriptParserMixin.parseUpdate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9839:20)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+      at TypeScriptParserMixin.allowInAnd (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+      at TypeScriptParserMixin.parseVar (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13460:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9469:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12927:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseBlock (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13373:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12174:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12160:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9223:18)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13521:12
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12477:14)
+      at TypeScriptParserMixin.parseFunction (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13520:10)
+      at TypeScriptParserMixin.parseExportDefaultExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13983:19)
+      at TypeScriptParserMixin.parseExportDefaultExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9463:18)
+      at TypeScriptParserMixin.parseExport (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13904:25)
+      at TypeScriptParserMixin.parseExport (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9446:20)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12954:27)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:14568:25)
+16:22:50 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+16:22:51 [vite] Pre-transform error: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowChart.tsx: Unexpected token, expected "," (64:51)
+
+  62 |
+  63 |   // === Данные графика ===
+> 64 |   const chartData = useMemo(() =>uges: ChartData[] => {
+     |                                                    ^
+  65 |     if (filteredData.length === 0) return [];
+  66 |
+  67 |     const monthsMap = new Map<string, Map<string, number>>();
+16:22:51 [vite] Internal server error: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowChart.tsx: Unexpected token, expected "," (64:51)
+
+  62 |
+  63 |   // === Данные графика ===
+> 64 |   const chartData = useMemo(() =>uges: ChartData[] => {
+     |                                                    ^
+  65 |     if (filteredData.length === 0) return [];
+  66 |
+  67 |     const monthsMap = new Map<string, Map<string, number>>();
+  Plugin: vite:react-babel
+  File: /home/user/escrow-dashboard/frontend/src/pages/Reports/EscrowChart.tsx:64:51
+  62 |  
+  63 |    // === Данные графика ===
+  64 |    const chartData = useMemo(() =>uges: ChartData[] => {
+     |                                                     ^
+  65 |      if (filteredData.length === 0) return [];
+  66 |  
+      at constructor (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+      at TypeScriptParserMixin.raise (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+      at TypeScriptParserMixin.unexpected (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+      at TypeScriptParserMixin.expect (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:6924:12)
+      at TypeScriptParserMixin.parseCallExpressionArguments (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11307:14)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11250:29)
+      at TypeScriptParserMixin.parseSubscript (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11184:19)
+      at TypeScriptParserMixin.parseSubscript (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9329:18)
+      at TypeScriptParserMixin.parseSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11158:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11149:17)
+      at TypeScriptParserMixin.parseUpdate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9890:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+      at TypeScriptParserMixin.parseExprOps (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9839:20)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+      at TypeScriptParserMixin.allowInAnd (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+      at TypeScriptParserMixin.parseVar (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13460:91)
+      at TypeScriptParserMixin.parseVarStatement (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13306:10)
+      at TypeScriptParserMixin.parseVarStatement (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9469:31)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12927:23)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseStatementListItem (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+      at TypeScriptParserMixin.parseBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseBlock (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13373:10)
+      at TypeScriptParserMixin.parseFunctionBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12174:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12160:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9223:18)
+      at /home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13521:12
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12477:14)
+      at TypeScriptParserMixin.parseFunction (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13520:10)
+      at TypeScriptParserMixin.parseExportDefaultExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13983:19)
+      at TypeScriptParserMixin.parseExportDefaultExpression (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9463:18)
+      at TypeScriptParserMixin.parseExport (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13904:25)
+      at TypeScriptParserMixin.parseExport (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9446:20)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12954:27)
+      at TypeScriptParserMixin.parseStatementContent (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:9569:18)
+      at TypeScriptParserMixin.parseStatementLike (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+      at TypeScriptParserMixin.parseModuleItem (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12820:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13392:36)
+      at TypeScriptParserMixin.parseBlockBody (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:13385:10)
+      at TypeScriptParserMixin.parseProgram (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12698:10)
+      at TypeScriptParserMixin.parseTopLevel (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:12688:25)
+      at TypeScriptParserMixin.parse (/home/user/escrow-dashboard/frontend/node_modules/@babel/parser/lib/index.js:14568:25)
+16:22:58 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+16:24:04 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+16:25:00 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+16:29:52 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+16:30:00 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+16:30:08 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+16:37:14 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+16:37:23 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+16:37:32 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+16:40:11 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+16:40:36 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+16:40:45 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+16:49:35 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+16:49:57 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+16:50:06 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+16:52:48 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+16:53:17 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+16:53:29 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+17:16:10 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+17:18:31 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+17:18:34 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+17:21:26 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+17:21:53 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+17:27:34 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+17:28:20 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+17:30:10 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+17:31:26 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+17:34:54 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+17:35:22 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+17:36:20 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+17:40:45 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css
+17:41:21 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+17:41:32 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+17:43:59 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+17:46:10 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+17:47:57 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+17:50:02 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+17:51:57 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+17:55:06 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css, /src/pages/Reports/EscrowAccountsReport.css
+17:56:06 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+17:56:54 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css, /src/pages/Reports/EscrowAccountsReport.css
+17:59:18 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+17:59:48 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css, /src/pages/Reports/EscrowAccountsReport.css
+18:00:12 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+18:00:23 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css, /src/pages/Reports/EscrowAccountsReport.css
+18:00:33 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css, /src/pages/Reports/EscrowAccountsReport.css
+18:01:07 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css, /src/pages/Reports/EscrowAccountsReport.css
+18:01:25 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css, /src/pages/Reports/EscrowAccountsReport.css
+18:01:42 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css, /src/pages/Reports/EscrowAccountsReport.css
+18:02:21 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css, /src/pages/Reports/EscrowAccountsReport.css
+18:02:31 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css, /src/pages/Reports/EscrowAccountsReport.css
+18:02:35 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+18:03:59 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+18:05:04 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.css
+18:07:44 [vite] hmr update /src/pages/Reports/EscrowChart.tsx, /src/index.css
+18:09:28 [vite] hmr update /src/pages/Reports/EscrowAccountsReport.tsx, /src/index.css

@@ -1,243 +1,279 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo, useCallback } from "react";
 import axios from "axios";
-import './EscrowAccountsReport.css';
-
-const monthsRu = [
-  "Янв", "Фев", "Мар", "Апр", "Май", "Июн",
-  "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек"
-];
-const formatMonthRu = ym => {
-  const [y, m] = ym.split('-');
-  return `${monthsRu[parseInt(m, 10) - 1]} '${y.slice(2)}`;
-};
-const currencyFormat = n =>
-  typeof n === 'number'
-    ? n >= 1e6
-      ? Math.round(n / 1e5) / 10 + " млн"
-      : n >= 1e3
-        ? Math.round(n / 1e2) / 10 + " тыс"
-        : n.toLocaleString("ru-RU")
-    : '-';
+import { Search, Building2, DollarSign, Users, AlertCircle, X } from "lucide-react";
+import EscrowChart from "./EscrowChart";
+import "./EscrowAccountsReport.css";
 
 const REPORT_SQL = `
   SELECT
-    id,
-    ddu_number,
-    operation_date,
+    object_name,
+    TO_CHAR(operation_date, 'YYYY-MM') as month,
     amount,
-    payer_name,
-    object_name
+    ddu_number
   FROM escrow_entries
-  ORDER BY operation_date, object_name
+  WHERE operation_date IS NOT NULL
+  ORDER BY operation_date ASC
 `;
 
-const EscrowAccountsReport = () => {
-  const [rows, setRows] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [filterObj, setFilterObj] = useState("");
-  const [filterYear, setFilterYear] = useState("");
-  const [filterMonth, setFilterMonth] = useState("");
-  const [theme, setTheme] = useState("light");
-  const isDark = theme === "dark";
+interface Row {
+  object_name: string;
+  month: string;
+  amount: number;
+  ddu_number: string;
+}
+
+interface AggregatedRow {
+  object_name: string;
+  total: number;
+  ddu_count: number;
+}
+
+const useEscrowData = () => {
+  const [data, setData] = useState<Row[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    setLoading(true);
-    axios
-      .post("/api/query/", { query: REPORT_SQL })
-      .then(res => {
-        const data = Array.isArray(res.data.data) ? res.data.data : [];
-        const withMonth = data.map(r => ({
-          ...r,
-          month: r.operation_date?.slice(0, 7)
-        }));
-        setRows(withMonth);
-      })
-      .catch(err => setError(err?.response?.data?.detail || err.message))
-      .finally(() => setLoading(false));
+    let isMounted = true;
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+        const res = await axios.post("/api/query/", { query: REPORT_SQL });
+        if (isMounted) {
+          setData(Array.isArray(res.data.data) ? res.data.data : []);
+        }
+      } catch (err) {
+        if (isMounted) {
+          setError(err instanceof Error ? err.message : "Ошибка загрузки данных");
+        }
+      } finally {
+        if (isMounted) {
+          setLoading(false);
+        }
+      }
+    };
+    fetchData();
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
-  const years = useMemo(() =>
-    [...new Set(rows.map(r => r.month?.substring(0, 4)))].sort(),
-    [rows]
-  );
-  const monthsInSelectedYear = useMemo(() => {
-    if (!filterYear) return [];
-    return [...new Set(
-      rows.filter(row => row.month?.startsWith(filterYear))
-        .map(r => r.month?.substring(5, 7))
-    )].sort();
-  }, [rows, filterYear]);
-  const filteredRows = useMemo(() => {
-    return rows.filter(row => {
-      if (filterObj && !row.object_name?.toLowerCase().includes(filterObj.trim().toLowerCase())) return false;
-      if (filterYear && !row.month?.startsWith(filterYear)) return false;
-      if (filterMonth && row.month !== filterMonth) return false;
-      return true;
+  return { data, loading, error };
+};
+
+const formatAmount = (n: number): string => {
+  return (n / 1_000_000).toFixed(1).replace(/\.0$/, "") + " млн ₽";
+};
+
+const getMonthName = (m: string): string => {
+  const names = ["Янв", "Фев", "Мар", "Апр", "Май", "Июн", "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек"];
+  return names[parseInt(m, 10) - 1] || m;
+};
+
+export default function EscrowAccountsReport() {
+  const { data, loading, error } = useEscrowData();
+  const [tableSearch, setTableSearch] = useState("");
+  const [tableYear, setTableYear] = useState("");
+  const [tableMonth, setTableMonth] = useState("");
+
+  const years = useMemo(() => {
+    const set = new Set(data.map((r) => r.month.slice(0, 4)));
+    return Array.from(set).sort().reverse();
+  }, [data]);
+
+  const tableMonths = useMemo(() => {
+    if (!tableYear) return [];
+    const set = new Set(
+      data
+        .filter((r) => r.month.startsWith(tableYear))
+        .map((r) => r.month.slice(5, 7))
+    );
+    return Array.from(set).sort();
+  }, [data, tableYear]);
+
+  const dataUpToSelected = useMemo(() => {
+    if (!tableYear) return data;
+    const cutoff = tableMonth ? `${tableYear}-${tableMonth}` : `${tableYear}-12`;
+    return data.filter((r) => r.month <= cutoff);
+  }, [data, tableYear, tableMonth]);
+
+  const filteredTableData = useMemo(() => {
+    return dataUpToSelected.filter((r) => {
+      const matchesSearch = !tableSearch || r.object_name.toLowerCase().includes(tableSearch.toLowerCase());
+      return matchesSearch;
     });
-  }, [rows, filterObj, filterMonth, filterYear]);
+  }, [dataUpToSelected, tableSearch]);
 
-  // Итоговая таблица по объектам
-  const tableData = useMemo(() => {
-    const byObj = {};
-    for (const row of filteredRows) {
-      if (!byObj[row.object_name])
-        byObj[row.object_name] = {
-          object_name: row.object_name,
-          total: 0,
-          dduSet: new Set()
-        };
-      byObj[row.object_name].total += Number(row.amount) || 0;
-      byObj[row.object_name].dduSet.add(row.ddu_number);
-    }
-    return Object.values(byObj).map(obj => ({
-      object_name: obj.object_name,
-      total: obj.total,
-      ddu_count: obj.dduSet.size
-    }));
-  }, [filteredRows]);
+  const tableRows = useMemo((): AggregatedRow[] => {
+    const objectData = new Map<string, { total: number; dduSet: Set<string> }>();
+    filteredTableData.forEach((r) => {
+      if (!objectData.has(r.object_name)) {
+        objectData.set(r.object_name, { total: 0, dduSet: new Set() });
+      }
+      const entry = objectData.get(r.object_name)!;
+      entry.total += Number(r.amount) || 0;
+      entry.dduSet.add(r.ddu_number);
+    });
+    return Array.from(objectData.entries())
+      .map(([object_name, { total, dduSet }]) => ({
+        object_name,
+        total,
+        ddu_count: dduSet.size,
+      }))
+      .sort((a, b) => b.total - a.total);
+  }, [filteredTableData]);
 
-  // Цвета/стили
-  const textColor = isDark ? "#f6f6f6" : "#233";
-  const bgCard = isDark ? "linear-gradient(155deg,#22252e 45%,#232428 100%)" : "#fff";
+  const resetTableFilters = useCallback(() => {
+    setTableSearch("");
+    setTableYear("");
+    setTableMonth("");
+  }, []);
+
+  if (error) {
+    return (
+      <div className="grok-report">
+        <div className="grok-container">
+          <div className="grok-card p-12 text-center">
+            <AlertCircle className="w-16 h-16 mx-auto mb-6 text-red-500" />
+            <p className="text-xl font-semibold text-red-700">{error}</p>
+            <button
+              onClick={() => window.location.reload()}
+              className="mt-6 px-8 py-3 bg-red-600 text-white rounded-xl hover:bg-red-700 transition font-medium"
+            >
+              Повторить
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
-    <div className={`escrow-report-container ${isDark ? "theme-dark" : "theme-light"}`}
-      style={{
-        background: isDark ? "#1a1b23" : "#f8fafd",
-        minHeight: "100vh"
-      }}>
-      <div className="escrow-report-header"
-        style={{
-          background: bgCard,
-          color: textColor,
-          borderRadius: 0,
-          marginBottom: 22,
-          boxShadow: isDark ? "0 2px 24px #14151a50" : "0 2px 16px #e3eafc22",
-          padding: "20px 24px"
-        }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <h2 className="escrow-report-title" style={{
-            fontSize: "1.32rem", color: "#2269c6", margin: 0
-          }}>
-            <span role="img" aria-label="Escrow" style={{ fontSize: "1.18em", marginRight: 8 }}>💰</span>
-            Отчет по эскроу-счетам (escrow_entries)
-          </h2>
-          <button
-            className="escrow-switch-theme-btn"
-            onClick={() => setTheme(isDark ? "light" : "dark")}
-            aria-label={isDark ? "Переключить на светлую" : "Переключить на тёмную"}
-            style={{
-              background: isDark ? "#2a3141" : "#f3f6fc", border: "none", borderRadius: 9,
-              color: isDark ? "#eee" : "#223", fontWeight: 600, padding: "7px 12px", marginLeft: 14,
-              boxShadow: "0 2px 9px #2231a028", cursor: "pointer", fontSize: "1.09em"
-            }}
-          >{isDark ? "🌞 Светлая" : "🌚 Тёмная"}
-          </button>
+    <div className="grok-report">
+      <div className="grok-container">
+        {/* Заголовок */}
+        <div className="grok-header">
+          <div>
+            <h1 className="grok-title">Эскроу-счета</h1>
+            <p className="grok-subtitle">
+              {loading
+                ? "Загрузка данных..."
+                : `${tableRows.length} ${tableRows.length === 1 ? "объект" : "объектов"}`}
+              {tableYear && tableMonth && (
+                <span className="grok-period">
+                  • до {getMonthName(tableMonth)} {tableYear}
+                </span>
+              )}
+            </p>
+          </div>
+          {(tableSearch || tableYear || tableMonth) && (
+            <button
+              onClick={resetTableFilters}
+              className="grok-reset-btn"
+            >
+              <X className="w-5 h-5" />
+              Сбросить
+            </button>
+          )}
         </div>
-        <div className="escrow-report-tools-row" style={{ flexWrap: "wrap", alignItems: "center", marginTop: 18, gap: 10 }}>
-          <input className="escrow-report-filter-input"
-            type="search" placeholder="Поиск по объекту..."
-            value={filterObj} onChange={e => setFilterObj(e.target.value)}
-            maxLength={48} aria-label="Поиск по объекту"
-            style={{
-              background: isDark ? "#272d39" : "#fafdff", color: textColor,
-              border: isDark ? "1.3px solid #334556" : "1.5px solid #e2e8f0",
-              padding: "8px 14px", borderRadius: 7, fontSize: "1em", outline: "none"
-            }} />
+
+        {/* Фильтры */}
+        <div className="grok-filters">
+          <div className="grok-search-wrapper">
+            <Search className="grok-search-icon" />
+            <input
+              type="text"
+              placeholder="Поиск объекта..."
+              value={tableSearch}
+              onChange={(e) => setTableSearch(e.target.value)}
+              className="grok-search"
+            />
+          </div>
+
           <select
-            value={filterYear}
-            onChange={e => { setFilterYear(e.target.value); setFilterMonth(""); }}
-            style={{
-              padding: "8px 12px", borderRadius: 7, fontWeight: 600,
-              background: isDark ? "#272d39" : "#eef2fa", color: textColor,
-              border: isDark ? "1.3px solid #334556" : "1.5px solid #dae5f6",
-              cursor: "pointer", outline: "none", fontSize: "1em"
-            }}>
-            <option value="">Год (все)</option>
-            {years.map(y => <option value={y} key={y}>{y}</option>)}
+            value={tableYear}
+            onChange={(e) => {
+              setTableYear(e.target.value);
+              setTableMonth("");
+            }}
+            className="grok-select"
+          >
+            <option value="">Все годы</option>
+            {years.map((y) => (
+              <option key={y} value={y}>{y}</option>
+            ))}
           </select>
-          {filterYear && (
-            <select value={filterMonth}
-              onChange={e => setFilterMonth(e.target.value)}
-              style={{
-                padding: "8px 12px", borderRadius: 7,
-                background: isDark ? "#272d39" : "#eef2fa", color: textColor,
-                border: isDark ? "1.3px solid #334556" : "1.5px solid #dae5f6",
-                fontWeight: 600, cursor: "pointer", outline: "none", fontSize: "1em"
-              }}>
-              <option value="">Месяц (все)</option>
-              {monthsInSelectedYear.map(m => (
-                <option value={`${filterYear}-${m}`} key={m}>{monthsRu[parseInt(m, 10) - 1]}</option>
+
+          {tableYear && (
+            <select
+              value={tableMonth}
+              onChange={(e) => setTableMonth(e.target.value)}
+              className="grok-select"
+            >
+              <option value="">Все месяцы</option>
+              {tableMonths.map((m) => (
+                <option key={m} value={m}>{getMonthName(m)}</option>
               ))}
             </select>
           )}
         </div>
-      </div>
 
-      {/* Таблица */}
-      <div className="escrow-table-card" style={{
-        background: bgCard,
-        color: textColor,
-        borderRadius: 14,
-        margin: "20px auto",
-        padding: "24px 8px",
-        maxWidth: "92vw",
-        boxShadow: isDark ? "0 2px 16px #18181b40" : "0 2px 16px #e3eafc16"
-      }}>
-        <table className="escrow-report-table" style={{
-          width: "100%",
-          borderCollapse: "collapse",
-          fontSize: "1.05em"
-        }}>
-          <thead>
-            <tr>
-              <th>Наименование объекта</th>
-              <th>Остаток на счетах ЭСКРОУ (накопит.)</th>
-              <th>Кол-во ДДУ (накопит.)</th>
-            </tr>
-          </thead>
-          <tbody>
-            {tableData.length === 0 ? (
-              <tr>
-                <td colSpan={3}
-                  style={{ color: "#888", textAlign: "center", padding: "18px" }}>
-                  Нет данных для выбранных параметров
-                </td>
-              </tr>
+        {/* Таблица */}
+        <div className="grok-card mt-8">
+          <div className="p-6">
+            {loading ? (
+              <div className="grok-skeleton">
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="grok-skeleton-row">
+                    <div className="grok-skeleton-line w-3/5"></div>
+                    <div className="grok-skeleton-line w-1/5"></div>
+                    <div className="grok-skeleton-line w-1/6"></div>
+                  </div>
+                ))}
+              </div>
+            ) : tableRows.length === 0 ? (
+              <div className="grok-empty">
+                <Building2 className="grok-empty-icon" />
+                <p className="grok-empty-text">Нет данных</p>
+              </div>
             ) : (
-              tableData.map(row => (
-                <tr key={row.object_name}>
-                  <td>{row.object_name}</td>
-                  <td>{currencyFormat(row.total)}</td>
-                  <td>{row.ddu_count}</td>
-                </tr>
-              ))
+              <table className="grok-table w-full">
+                <thead>
+                  <tr className="grok-table-header">
+                    <th className="grok-th-left">
+                      <Building2 className="inline w-5 h-5 mr-2" />
+                      Объект
+                    </th>
+                    <th className="grok-th-right">
+                      <DollarSign className="inline w-5 h-5 mr-1" />
+                      Остаток
+                    </th>
+                    <th className="grok-th-right">
+                      <Users className="inline w-5 h-5 mr-1" />
+                      ДДУ
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {tableRows.map((row, idx) => (
+                    <tr key={row.object_name} className="grok-table-row">
+                      <td className="grok-td-object">{row.object_name}</td>
+                      <td className="grok-td-amount">{formatAmount(row.total)}</td>
+                      <td className="grok-td-count">{row.ddu_count}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             )}
-          </tbody>
-        </table>
-      </div>
+          </div>
+        </div>
 
-      {loading && (
-        <div className="escrow-report-loading" style={{
-          textAlign: "center", padding: 48, fontSize: "1.2em", color: "#2269c6"
-        }}>
-          Загрузка...
-        </div>
-      )}
-      {error && (
-        <div className="escrow-report-error" role="alert" style={{
-          background: isDark ? "#3a1f1f" : "#fff5f5",
-          border: `2px solid ${isDark ? "#c53030" : "#fc8181"}`,
-          borderRadius: 12, padding: 20, margin: "20px auto",
-          maxWidth: 800, width: "98%", color: isDark ? "#feb2b2" : "#c53030"
-        }}>
-          <span className="escrow-error-icon" style={{ fontSize: "1.3em", marginRight: 10 }}>⚠️</span>
-          {error}
-        </div>
-      )}
+        {/* График */}
+        {!loading && data && data.length > 0 && (
+          <EscrowChart rawData={data} loading={loading} allYears={years} />
+        )}
+      </div>
     </div>
   );
-};
-
-export default EscrowAccountsReport;
+}
