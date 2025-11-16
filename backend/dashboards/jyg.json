@@ -1,0 +1,1048 @@
+{
+  "title": "jyg",
+  "description": "",
+  "config": {
+    "widgets": [
+      {
+        "id": "44df700c-3871-4024-bed9-ed6306d47595",
+        "type": "table",
+        "props": {
+          "sql": "SELECT * FROM escrow_entries LIMIT 100",
+          "result": {
+            "columns": [
+              "id",
+              "ddu_number",
+              "operation_date",
+              "amount",
+              "payer_name",
+              "object_name",
+              "file_hash",
+              "upload_date"
+            ],
+            "data": [
+              {
+                "id": 11091,
+                "ddu_number": "401.А2-Под1",
+                "operation_date": "2025-10-30",
+                "amount": 1712640,
+                "payer_name": "ИНН депонента",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11092,
+                "ddu_number": "901.А2-Под1",
+                "operation_date": "2025-11-06",
+                "amount": 5202393.05,
+                "payer_name": "ИНН депонента",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11093,
+                "ddu_number": "11НП-Под",
+                "operation_date": "2025-11-01",
+                "amount": 4700000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11094,
+                "ddu_number": "11НП-Под",
+                "operation_date": "2025-11-01",
+                "amount": 1000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11095,
+                "ddu_number": "501.А2-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 1000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11096,
+                "ddu_number": "902.А2-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 1000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11097,
+                "ddu_number": "5НП-Под",
+                "operation_date": "2025-10-29",
+                "amount": 2834216,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11098,
+                "ddu_number": "333.В2-Под4",
+                "operation_date": "2025-10-20",
+                "amount": 117115,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11099,
+                "ddu_number": "333.В2-Под4",
+                "operation_date": "2025-10-13",
+                "amount": 6500010,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11100,
+                "ddu_number": "606.А2-Под1",
+                "operation_date": "2025-09-02",
+                "amount": 7835733.05,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11101,
+                "ddu_number": "204.А2-Под1",
+                "operation_date": "2025-10-14",
+                "amount": 6000000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11102,
+                "ddu_number": "204.А2-Под1",
+                "operation_date": "2025-10-14",
+                "amount": 2792000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11103,
+                "ddu_number": "906.А2-Под1",
+                "operation_date": "2025-10-22",
+                "amount": 690266.95,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11104,
+                "ddu_number": "906.А2-Под1",
+                "operation_date": "2025-10-01",
+                "amount": 7029963.05,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11105,
+                "ddu_number": "925.Г4-Под3",
+                "operation_date": "2025-09-04",
+                "amount": 6630000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11106,
+                "ddu_number": "610.А2-Под1",
+                "operation_date": "2025-09-15",
+                "amount": 3733532,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11107,
+                "ddu_number": "610.А2-Под1",
+                "operation_date": "2025-09-15",
+                "amount": 2501468,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11108,
+                "ddu_number": "940.Г3-Под",
+                "operation_date": "2025-06-06",
+                "amount": 6651000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11109,
+                "ddu_number": "412.Д-Под2",
+                "operation_date": "2025-10-31",
+                "amount": 5000000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11110,
+                "ddu_number": "902.Г2-Под1",
+                "operation_date": "2025-10-23",
+                "amount": 170709,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11111,
+                "ddu_number": "902.Г2-Под1",
+                "operation_date": "2025-09-25",
+                "amount": 1975500,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11112,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-11-04",
+                "amount": 250000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11113,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-10-18",
+                "amount": 280000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11114,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-09-29",
+                "amount": 300000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11115,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-09-24",
+                "amount": 160000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11116,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-09-02",
+                "amount": 500000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11117,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-08-27",
+                "amount": 2500000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11118,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-08-27",
+                "amount": 2500,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11119,
+                "ddu_number": "511.Д-Под2",
+                "operation_date": "2025-09-11",
+                "amount": 6184720,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11120,
+                "ddu_number": "509.А3-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 5585294.4,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11121,
+                "ddu_number": "208.А3-Под1",
+                "operation_date": "2025-11-09",
+                "amount": 532839,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11122,
+                "ddu_number": "208.А3-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 3197041,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11123,
+                "ddu_number": "810.А3-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 154360,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11124,
+                "ddu_number": "810.А3-Под1",
+                "operation_date": "2025-10-09",
+                "amount": 1712640,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11125,
+                "ddu_number": "310.А3-Под1",
+                "operation_date": "2025-10-07",
+                "amount": 1712640,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11126,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-11-09",
+                "amount": 330000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11127,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-11-06",
+                "amount": 110000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11128,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 150000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11129,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-30",
+                "amount": 70000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11130,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-18",
+                "amount": 60000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11131,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-14",
+                "amount": 50000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11132,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-07",
+                "amount": 110000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11133,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-01",
+                "amount": 2057000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11134,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-01",
+                "amount": 600,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11135,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-09-30",
+                "amount": 200000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11136,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-09-30",
+                "amount": 200000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11137,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-09-30",
+                "amount": 200000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11138,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-09-30",
+                "amount": 100000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11139,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-09-30",
+                "amount": 100000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11140,
+                "ddu_number": "209.А3-Под1",
+                "operation_date": "2025-10-08",
+                "amount": 5024933.05,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              }
+            ],
+            "rawRows": [
+              {
+                "id": 11091,
+                "ddu_number": "401.А2-Под1",
+                "operation_date": "2025-10-30",
+                "amount": 1712640,
+                "payer_name": "ИНН депонента",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11092,
+                "ddu_number": "901.А2-Под1",
+                "operation_date": "2025-11-06",
+                "amount": 5202393.05,
+                "payer_name": "ИНН депонента",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11093,
+                "ddu_number": "11НП-Под",
+                "operation_date": "2025-11-01",
+                "amount": 4700000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11094,
+                "ddu_number": "11НП-Под",
+                "operation_date": "2025-11-01",
+                "amount": 1000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11095,
+                "ddu_number": "501.А2-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 1000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11096,
+                "ddu_number": "902.А2-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 1000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11097,
+                "ddu_number": "5НП-Под",
+                "operation_date": "2025-10-29",
+                "amount": 2834216,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11098,
+                "ddu_number": "333.В2-Под4",
+                "operation_date": "2025-10-20",
+                "amount": 117115,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11099,
+                "ddu_number": "333.В2-Под4",
+                "operation_date": "2025-10-13",
+                "amount": 6500010,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11100,
+                "ddu_number": "606.А2-Под1",
+                "operation_date": "2025-09-02",
+                "amount": 7835733.05,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11101,
+                "ddu_number": "204.А2-Под1",
+                "operation_date": "2025-10-14",
+                "amount": 6000000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11102,
+                "ddu_number": "204.А2-Под1",
+                "operation_date": "2025-10-14",
+                "amount": 2792000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11103,
+                "ddu_number": "906.А2-Под1",
+                "operation_date": "2025-10-22",
+                "amount": 690266.95,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11104,
+                "ddu_number": "906.А2-Под1",
+                "operation_date": "2025-10-01",
+                "amount": 7029963.05,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11105,
+                "ddu_number": "925.Г4-Под3",
+                "operation_date": "2025-09-04",
+                "amount": 6630000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11106,
+                "ddu_number": "610.А2-Под1",
+                "operation_date": "2025-09-15",
+                "amount": 3733532,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11107,
+                "ddu_number": "610.А2-Под1",
+                "operation_date": "2025-09-15",
+                "amount": 2501468,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11108,
+                "ddu_number": "940.Г3-Под",
+                "operation_date": "2025-06-06",
+                "amount": 6651000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11109,
+                "ddu_number": "412.Д-Под2",
+                "operation_date": "2025-10-31",
+                "amount": 5000000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11110,
+                "ddu_number": "902.Г2-Под1",
+                "operation_date": "2025-10-23",
+                "amount": 170709,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11111,
+                "ddu_number": "902.Г2-Под1",
+                "operation_date": "2025-09-25",
+                "amount": 1975500,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11112,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-11-04",
+                "amount": 250000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11113,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-10-18",
+                "amount": 280000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11114,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-09-29",
+                "amount": 300000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11115,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-09-24",
+                "amount": 160000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11116,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-09-02",
+                "amount": 500000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11117,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-08-27",
+                "amount": 2500000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11118,
+                "ddu_number": "510.Д-Под2",
+                "operation_date": "2025-08-27",
+                "amount": 2500,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11119,
+                "ddu_number": "511.Д-Под2",
+                "operation_date": "2025-09-11",
+                "amount": 6184720,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11120,
+                "ddu_number": "509.А3-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 5585294.4,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11121,
+                "ddu_number": "208.А3-Под1",
+                "operation_date": "2025-11-09",
+                "amount": 532839,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11122,
+                "ddu_number": "208.А3-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 3197041,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11123,
+                "ddu_number": "810.А3-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 154360,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11124,
+                "ddu_number": "810.А3-Под1",
+                "operation_date": "2025-10-09",
+                "amount": 1712640,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11125,
+                "ddu_number": "310.А3-Под1",
+                "operation_date": "2025-10-07",
+                "amount": 1712640,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11126,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-11-09",
+                "amount": 330000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11127,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-11-06",
+                "amount": 110000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11128,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-11-05",
+                "amount": 150000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11129,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-30",
+                "amount": 70000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11130,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-18",
+                "amount": 60000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11131,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-14",
+                "amount": 50000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11132,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-07",
+                "amount": 110000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11133,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-01",
+                "amount": 2057000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11134,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-10-01",
+                "amount": 600,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11135,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-09-30",
+                "amount": 200000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11136,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-09-30",
+                "amount": 200000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11137,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-09-30",
+                "amount": 200000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11138,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-09-30",
+                "amount": 100000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11139,
+                "ddu_number": "809.А3-Под1",
+                "operation_date": "2025-09-30",
+                "amount": 100000,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              },
+              {
+                "id": 11140,
+                "ddu_number": "209.А3-Под1",
+                "operation_date": "2025-10-08",
+                "amount": 5024933.05,
+                "payer_name": "910219621352",
+                "object_name": "Подсолнух",
+                "file_hash": "8ee8a0e8c828f98e5159321c7527f78d",
+                "upload_date": "2025-11-13T12:33:48.167558+03:00"
+              }
+            ],
+            "row_count": 50,
+            "query": "SELECT * FROM escrow_entries LIMIT 50"
+          },
+          "tableName": "escrow_entries"
+        }
+      }
+    ],
+    "layout": [
+      {
+        "widgetId": "44df700c-3871-4024-bed9-ed6306d47595",
+        "x": 0,
+        "y": 0,
+        "w": 18,
+        "h": 46
+      }
+    ],
+    "filters": {},
+    "theme": "corporate"
+  },
+  "created_at": "2025-11-14T19:57:05.946070",
+  "updated_at": "2025-11-14T19:57:14.318568",
+  "is_published": true
+}

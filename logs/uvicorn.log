@@ -405,3 +405,223 @@ INFO:     10.10.3.58:40786 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
 INFO:     10.10.3.58:40794 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
 2025-11-13 19:50:47,120 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
 INFO:     10.10.3.58:40808 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:54:13,392 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:38338 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:54:13,405 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:38340 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:54:13,414 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:38352 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:54:13,430 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:38358 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:54:35,340 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/auth/login
+INFO:     10.10.3.58:34708 - "POST /api/auth/login HTTP/1.1" 200 OK
+2025-11-14 19:54:35,567 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/users/me
+INFO:     10.10.3.58:34722 - "GET /api/users/me HTTP/1.1" 200 OK
+2025-11-14 19:54:35,836 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/users/
+INFO:     10.10.3.58:34732 - "GET /api/users/ HTTP/1.1" 200 OK
+2025-11-14 19:54:35,849 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/users/
+INFO:     10.10.3.58:34742 - "GET /api/users/ HTTP/1.1" 200 OK
+2025-11-14 19:54:56,856 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/auth/login
+INFO:     10.10.3.58:56728 - "POST /api/auth/login HTTP/1.1" 200 OK
+2025-11-14 19:54:57,091 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/users/me
+INFO:     10.10.3.58:56738 - "GET /api/users/me HTTP/1.1" 200 OK
+2025-11-14 19:54:57,585 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:56742 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:54:57,610 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:56752 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:54:57,625 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:56760 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:54:57,643 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:56774 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:55:00,458 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+2025-11-14 19:55:00,530 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+INFO:     10.10.3.58:60102 - "POST /api/query/ HTTP/1.1" 200 OK
+INFO:     10.10.3.58:60110 - "POST /api/query/ HTTP/1.1" 200 OK
+2025-11-14 19:56:23,957 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/auth/login
+INFO:     10.10.3.58:55490 - "POST /api/auth/login HTTP/1.1" 200 OK
+2025-11-14 19:56:24,170 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/users/me
+INFO:     10.10.3.58:55502 - "GET /api/users/me HTTP/1.1" 200 OK
+2025-11-14 19:56:25,663 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/meta/tables
+2025-11-14 19:56:25,671 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:55526 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+INFO:     10.10.3.58:55514 - "GET /api/meta/tables HTTP/1.1" 200 OK
+2025-11-14 19:56:25,696 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:55530 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:56:25,699 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/meta/tables
+INFO:     10.10.3.58:55536 - "GET /api/meta/tables HTTP/1.1" 200 OK
+2025-11-14 19:56:25,719 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:55546 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:56:25,741 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:55560 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:56:34,739 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+INFO:     10.10.3.58:53534 - "POST /api/query/ HTTP/1.1" 200 OK
+2025-11-14 19:56:43,422 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+INFO:     10.10.3.58:41994 - "POST /api/query/ HTTP/1.1" 200 OK
+2025-11-14 19:57:05,935 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/dashboards-files/save
+INFO:     10.10.3.58:47050 - "POST /api/dashboards-files/save HTTP/1.1" 200 OK
+2025-11-14 19:57:05,966 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:47058 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:57:05,989 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:47072 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:57:14,317 - app.main - INFO - 🌐 PUT http://10.10.3.58:8000/api/dashboards-files/jyg
+INFO:     10.10.3.58:57402 - "PUT /api/dashboards-files/jyg HTTP/1.1" 200 OK
+2025-11-14 19:57:14,348 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:57410 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:57:14,381 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:57418 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:57:24,415 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/auth/login
+INFO:     10.10.3.58:46422 - "POST /api/auth/login HTTP/1.1" 200 OK
+2025-11-14 19:57:24,629 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/users/me
+INFO:     10.10.3.58:46436 - "GET /api/users/me HTTP/1.1" 200 OK
+2025-11-14 19:57:24,822 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:46442 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:57:24,849 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:46452 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:57:24,862 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:46464 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:57:24,882 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:46474 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 19:57:27,245 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/jyg
+INFO:     10.10.3.58:46476 - "GET /api/dashboards-files/jyg HTTP/1.1" 200 OK
+2025-11-14 19:57:42,707 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/auth/login
+INFO:     10.10.3.58:33824 - "POST /api/auth/login HTTP/1.1" 200 OK
+2025-11-14 19:57:42,928 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/users/me
+INFO:     10.10.3.58:33826 - "GET /api/users/me HTTP/1.1" 200 OK
+2025-11-14 20:06:11,580 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/auth/login
+INFO:     10.10.3.58:40294 - "POST /api/auth/login HTTP/1.1" 200 OK
+2025-11-14 20:06:11,896 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/users/me
+INFO:     10.10.3.58:40306 - "GET /api/users/me HTTP/1.1" 200 OK
+2025-11-14 20:06:12,121 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:40322 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 20:06:12,142 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:40328 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 20:06:12,154 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:40336 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 20:06:12,171 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:40346 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-14 20:06:17,363 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/235235
+INFO:     10.10.3.58:40360 - "GET /api/dashboards-files/235235 HTTP/1.1" 200 OK
+2025-11-14 20:06:23,669 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+2025-11-14 20:06:23,669 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+INFO:     10.10.3.58:37896 - "POST /api/query/ HTTP/1.1" 200 OK
+INFO:     10.10.3.58:37906 - "POST /api/query/ HTTP/1.1" 200 OK
+2025-11-15 18:41:43,155 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/auth/login
+INFO:     10.10.3.58:57140 - "POST /api/auth/login HTTP/1.1" 200 OK
+2025-11-15 18:41:43,405 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/users/me
+INFO:     10.10.3.58:57142 - "GET /api/users/me HTTP/1.1" 200 OK
+2025-11-15 18:41:46,821 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:57148 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 18:41:46,835 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:57162 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 18:41:46,844 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:57172 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 18:41:46,862 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:57176 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 18:41:49,410 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+2025-11-15 18:41:49,410 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+INFO:     10.10.3.58:57186 - "POST /api/query/ HTTP/1.1" 200 OK
+INFO:     10.10.3.58:57188 - "POST /api/query/ HTTP/1.1" 200 OK
+2025-11-15 19:41:38,224 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:39554 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 19:41:38,235 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:39568 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 19:41:38,247 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:39578 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 19:41:38,261 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:39580 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 22:03:42,592 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:34900 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 22:03:42,602 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:34916 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 22:03:42,616 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:34926 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 22:03:42,632 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:34928 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:18:21,961 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/auth/login
+INFO:     10.10.3.58:42724 - "POST /api/auth/login HTTP/1.1" 200 OK
+2025-11-15 23:18:22,162 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/users/me
+INFO:     10.10.3.58:42738 - "GET /api/users/me HTTP/1.1" 200 OK
+2025-11-15 23:18:25,741 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:42742 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:18:25,752 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:42750 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:18:25,761 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:42756 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:18:25,775 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:42758 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:18:27,992 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+2025-11-15 23:18:27,993 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+INFO:     10.10.3.58:42774 - "POST /api/query/ HTTP/1.1" 200 OK
+INFO:     10.10.3.58:42788 - "POST /api/query/ HTTP/1.1" 200 OK
+2025-11-15 23:31:06,438 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:52110 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:31:06,450 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:52114 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:31:06,457 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:52128 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:31:06,467 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:52138 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:31:08,335 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+2025-11-15 23:31:08,404 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+INFO:     10.10.3.58:52142 - "POST /api/query/ HTTP/1.1" 200 OK
+INFO:     10.10.3.58:52156 - "POST /api/query/ HTTP/1.1" 200 OK
+2025-11-15 23:33:12,034 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:51398 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:33:12,043 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:51406 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:33:12,056 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:51420 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:33:12,064 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:51426 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:33:13,630 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+2025-11-15 23:33:13,630 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+INFO:     10.10.3.58:51440 - "POST /api/query/ HTTP/1.1" 200 OK
+INFO:     10.10.3.58:51444 - "POST /api/query/ HTTP/1.1" 200 OK
+2025-11-15 23:35:35,476 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:44750 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:35:35,487 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:44758 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:35:35,496 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:44770 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:35:35,507 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:44784 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-15 23:35:36,995 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+2025-11-15 23:35:36,996 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+INFO:     10.10.3.58:44788 - "POST /api/query/ HTTP/1.1" 200 OK
+INFO:     10.10.3.58:44792 - "POST /api/query/ HTTP/1.1" 200 OK
+2025-11-16 13:15:17,948 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:53978 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 13:15:17,958 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:53984 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 13:15:17,968 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:53996 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 13:15:17,981 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:54008 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 13:15:19,792 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+2025-11-16 13:15:19,793 - app.main - INFO - 🌐 POST http://10.10.3.58:8000/api/query/
+INFO:     10.10.3.58:50138 - "POST /api/query/ HTTP/1.1" 200 OK
+INFO:     10.10.3.58:50142 - "POST /api/query/ HTTP/1.1" 200 OK
+2025-11-16 14:45:37,553 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:43778 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 14:45:37,565 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:43788 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 14:45:37,576 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:43796 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 14:45:37,628 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:43808 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 17:36:56,300 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:43612 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 17:36:56,310 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:43614 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 17:36:56,318 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:43628 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 17:36:56,332 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:43630 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 17:37:37,220 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:37878 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 17:37:37,229 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:37884 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 17:37:37,237 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:37894 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
+2025-11-16 17:37:37,248 - app.main - INFO - 🌐 GET http://10.10.3.58:8000/api/dashboards-files/list
+INFO:     10.10.3.58:37904 - "GET /api/dashboards-files/list HTTP/1.1" 200 OK
